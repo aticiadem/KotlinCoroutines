@@ -6,28 +6,23 @@ import kotlinx.coroutines.*
 
 class MainActivity : AppCompatActivity() {
 
-    private var i: Int = 1
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        println("runBlocking basladi.")
-        runBlocking {
-            launch {
-                delay(4000)
-                println("runBlocking")
+        /*GlobalScope.launch {
+            launch(Dispatchers.Main){
+                println("Main Thread      : ${Thread.currentThread().name}")
             }
-        }
-        println("runBlocking bitti.")
-
-        println("GlobalScope basladi.")
-        GlobalScope.launch {
-            delay(4000)
-            println("GlobalScope")
-        }
-        println("GlobalScope bitti.")
-        // runBlocking main threadi blokladıgı icin arkaplanda calismaz ve islemin bitmesi gerekir.
-        // GlobalScope ise arkaplanda calismaya devam eder, main threadi bloklamaz.
+            launch(Dispatchers.Default) {
+                println("Default Thread   : ${Thread.currentThread().name}")
+            }
+            launch(Dispatchers.Unconfined){
+                println("Unconfined Thread: ${Thread.currentThread().name}")
+            }
+            launch(Dispatchers.IO) {
+                println("IO Thread        : ${Thread.currentThread().name}")
+            }
+        }*/
     }
 }
