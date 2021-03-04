@@ -4,7 +4,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 fun main(){
-    /*runBlocking {
+    runBlocking {
         val firstJob = launch {
             delay(2000)
             println("firstJob")
@@ -16,5 +16,5 @@ fun main(){
             println("Job finished.")
         }
 
-    }*/
+    }
 }

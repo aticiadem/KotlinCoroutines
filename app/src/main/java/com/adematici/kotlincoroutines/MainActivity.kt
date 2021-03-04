@@ -10,7 +10,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /*GlobalScope.launch {
+        println("runBlocking basladi.")
+        runBlocking {
+            launch {
+                delay(4000)
+                println("runBlocking")
+            }
+        }
+        println("runBlocking bitti.")
+        println("GlobalScope basladi.")
+        GlobalScope.launch {
+            delay(4000)
+            println("GlobalScope")
+        }
+        println("GlobalScope bitti.")
+
+        GlobalScope.launch {
             launch(Dispatchers.Main){
                 println("Main Thread      : ${Thread.currentThread().name}")
             }
@@ -23,6 +38,6 @@ class MainActivity : AppCompatActivity() {
             launch(Dispatchers.IO) {
                 println("IO Thread        : ${Thread.currentThread().name}")
             }
-        }*/
+        }
     }
 }

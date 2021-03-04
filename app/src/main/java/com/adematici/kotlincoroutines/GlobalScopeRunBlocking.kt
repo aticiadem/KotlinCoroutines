@@ -6,7 +6,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 fun main() {
-    /*println("runBlocking basladi.")
+    println("runBlocking basladi.")
     runBlocking {
         launch {
             delay(4000)
@@ -22,5 +22,5 @@ fun main() {
     }
     println("GlobalScope bitti.")
     // runBlocking main threadi blokladıgı icin arkaplanda calismaz ve islemin bitmesi gerekir.
-    // GlobalScope ise arkaplanda calismaya devam eder, main threadi bloklamaz.*/
+    // GlobalScope ise arkaplanda calismaya devam eder, main threadi bloklamaz.
 }

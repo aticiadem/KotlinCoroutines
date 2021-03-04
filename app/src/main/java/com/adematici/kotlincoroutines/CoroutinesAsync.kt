@@ -5,7 +5,7 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 
 fun main() {
-    /*var isim = ""
+    var isim = ""
     var yas = 0
     runBlocking {
         val indirilmisIsim = async { indirilenIsim() }
@@ -13,7 +13,7 @@ fun main() {
         isim = indirilmisIsim.await()
         yas = indirilmisYas.await()
         println("$isim $yas")
-    }*/
+    }
 }
 suspend fun indirilenIsim(): String{
     delay(2000)

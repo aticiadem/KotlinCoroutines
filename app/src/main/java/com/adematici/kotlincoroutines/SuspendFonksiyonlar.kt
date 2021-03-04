@@ -1,11 +1,11 @@
 package com.adematici.kotlincoroutines
 import kotlinx.coroutines.*
 fun main(){
-    /*println("Suspend basinda")
+    println("Suspend basinda")
     runBlocking {
         selamVer()
     }
-    println("Suspend sonunda")*/
+    println("Suspend sonunda")
 }
 
 suspend fun selamVer(){

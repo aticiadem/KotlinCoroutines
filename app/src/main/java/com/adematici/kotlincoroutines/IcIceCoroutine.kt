@@ -6,7 +6,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 fun main(){
-    /*runBlocking {
+    runBlocking {
         launch {
             delay(2000)
             println("2 saniye gecti.")
@@ -17,5 +17,5 @@ fun main(){
                 println("4 saniye gecti.")
             }
         }
-    }*/
+    }
 }
