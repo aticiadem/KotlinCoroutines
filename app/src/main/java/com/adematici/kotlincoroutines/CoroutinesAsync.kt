@@ -5,25 +5,25 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
 
 fun main() {
-    var isim = ""
-    var yas = 0
+    var name = ""
+    var age = 0
     runBlocking {
-        val indirilmisIsim = async { indirilenIsim() }
-        val indirilmisYas = async { indirilenYas() }
-        isim = indirilmisIsim.await()
-        yas = indirilmisYas.await()
-        println("$isim $yas")
+        val downloadedName = async { downloadName() }
+        val downloadedAge = async { downloadAge() }
+        name = downloadedName.await()
+        age = downloadedAge.await()
+        println("$name $age")
     }
 }
-suspend fun indirilenIsim(): String{
+suspend fun downloadName(): String{
     delay(2000)
-    val isim = "Adem"
+    val name = "Adem"
     println("Isim indirildi.")
-    return isim
+    return name
 }
-suspend fun indirilenYas(): Int{
+suspend fun downloadAge(): Int{
     delay(3000)
-    val yas = 21
+    val age = 21
     println("Yas indirildi.")
-    return yas
+    return age
 }
