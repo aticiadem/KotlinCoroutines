@@ -3,12 +3,12 @@ import kotlinx.coroutines.*
 fun main(){
     println("Suspend basinda")
     runBlocking {
-        sayHi()
+        introduceYourself()
     }
     println("suspend sonunda")
 }
 
-suspend fun sayHi(){
+suspend fun introduceYourself(){
     delay(2000)
     coroutineScope {
         launch {
