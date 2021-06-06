@@ -1,6 +1,6 @@
 # KotlinCoroutines
 
-Merhaba, bu proje [mobiler.dev](https://www.mobiler.dev/)'de paylaştığım yazı için hazırlanmıştır. Yazı içeriğine [buradan](https://www.google.com) ulaşabilirsiniz.
+Merhaba, bu proje [mobiler.dev](https://www.mobiler.dev/)'de paylaştığım yazı için hazırlanmıştır. Yazı içeriğine [buradan](https://www.mobiler.dev/post/kotlin-coroutines-in-genel-tanitimi-ve-kullanimi) ulaşabilirsiniz.
 
 - Kotlin Coroutine [Entegrasyonu](https://github.com/aticiadem/KotlinCoroutines/blob/master/app/build.gradle)
 - runBlocking ve launch [örneği](https://github.com/aticiadem/KotlinCoroutines/blob/master/app/src/main/java/com/adematici/kotlincoroutines/MainActivity.kt)
